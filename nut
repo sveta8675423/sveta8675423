@@ -15,13 +15,3 @@ end
 A1=[7,2;-4,1];
 [V,D]=eig(A1);
 J=inv(V)*A1*V;
-%%创建函数nut
-function nut(K)
- [vect,eval]=eig(K);
- vt=vect;
- el=eval;
- disp(vt);
- disp(el);
- save P.mat vt
- save P.mat;
-end
